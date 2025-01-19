@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRNA CHIBA FESTIVAL 2024</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="" />
+
+    <!-- Other meta tags -->
+    <meta name="description" content="यो NRNA चिबा को फेस्टिवल को डिजाइन बनाउने टुल हो। तपाईंले आफ्नो मनपर्ने फोटो चयन गरेर फेस्टिवल ब्यानर बनाउन सक्नुहुन्छ र फेस्टिवललाई सफल बनाउनको लागि अनुरोध गर्दछौं।">
+    <!-- Link to the thumbnail image -->
+    <link rel="image_src" href="img/thumbnail.png">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="js/caman.full.js"></script>
+	<main>
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="NRNA Chiba Festival Logo" />
+            </div>
+        </header>
+
+        <h1>एनआरएनए चिबा नेपाल फेस्टिवल २०२४</h1>
+        <div class="description">
+            यो NRNA चिबा को फेस्टिवल को डिजाइन बनाउने टुल हो। तपाईंले आफ्नो मनपर्ने फोटो राखेर चिबा फेस्टिवलको ब्यानर बनाउन
+            सक्नुहुन्छ र फेस्टिवललाई सफल बनाउनको लागि अनुरोध गर्दछौं।
+        </div>
+        <div class="upload-img">
+            <input type="file" accept="image/*" onchange="loadFile(event)" id="file" class="inputfile" />
+            <label for="file">फोटो छान्नुहोस्</label>
+        </div>
+
+        <div class="center photo-frame">
+            <img id="overlay-img" src="plain.png" alt="Overlay Image" />
+        </div>
+
+        <div class="center">
+            <button id="downloadBtn" class="btn blue-btn" style="display: none;" onclick="downloadImage()">फोटो डाउनलोड गर्नुहोस्</button>
+        </div>
+
+        <section class="company-logo" style="border-bottom: 1px solid rgb(170, 170, 170); padding: 30px;">
+            <h2>फेस्टिवल सपोर्टर्स</h2>
+            <div class="description info">
+                NRNA चिबा को नेपाल फेस्टिवल २०२४ लाई सफल बनाउन विभिन्न संस्थाबाट हामीलाई सहयोग र सपोर्ट गर्नु भएकोमा हामी एनआरएनए चिबा परिवार धन्यवाद प्रकट गर्दछौं।
+                यस चिबा नेपाल फेस्टिवल २०२४ लाई सबै जना मिलि भव्य र सभ्यका साथ सफल बनाऔं।
+            </div>
+            <div class="company-logo-animation"></div>
+        </section>
+
+        <div class="madeBy">Made by <a href="#" target="_blank">RAMESH GIRI</a> using <a href="#" target="_blank">CamanJS</a></div>
+    </main>
+
+	<script src="js/script.js"></script> <!-- Assuming the JavaScript has been moved to an external file named script.js -->
+</body>
+</html>
